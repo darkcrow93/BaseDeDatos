@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Crear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Objetos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="0.17"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Imagen"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.17">
+
+            <ImageView
+                android:id="@+id/Image_Pkmn1"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nombre_numero"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.36">
+
+            <TextView
+                android:id="@+id/NombrePkmn1"
+                android:text="Crabominable"
+                android:textColor="#ff000000"
+                android:textAlignment="textStart"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/NumeroPkmn1"
+                android:text="#001"
+                android:textAlignment="textStart"
+                android:textColor="#ff868686"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Tipos_P_S"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.47">
+
+            <LinearLayout
+                android:id="@+id/tipos"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50">
+
+                <Button
+                    android:id="@+id/Tipo1PPkmn"
+                    android:textStyle="bold"
+                    android:text="Electric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/Tipo2PPkmn"
+                    android:textStyle="bold"
+                    android:text="Electric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/types"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.50">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
