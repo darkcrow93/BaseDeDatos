@@ -8,7 +8,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class DatabaseAccess {
     private SQLiteOpenHelper openHelper;
@@ -105,7 +104,7 @@ public class DatabaseAccess {
     public ArrayList<Informacion> DatosPuchamonTodos(String newDato) {
         ArrayList<Informacion> informacionlist = new ArrayList<>();
 
-        Cursor cursor2 = database.rawQuery("SELECT * FROM Pokedex WHERE ID LIKE '%" + newDato + "%'", null);
+        Cursor cursor2 = database.rawQuery("SELECT * FROM Pokedex WHERE Numero LIKE '%" + newDato + "%'", null);
 
         if(newDato != null && newDato.length() > 0)
         {

@@ -37,53 +37,53 @@ public class DatabaseAdapterInformation extends BaseAdapter {
     }
 
     @Override
-    public long getItemId(int ID) {
-        return ID;
+    public long getItemId(int i) {
+        return i;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View view, ViewGroup parent) {
         holder1 = null;
 
-        if(convertView == null)
+        if(view == null)
         {
             LayoutInflater info = (LayoutInflater)context1.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = info.inflate(R.layout.activity_poke_info, null);
+            view = info.inflate(R.layout.activity_poke_info, null);
 
             holder1 = new ViewHolder();
 
-            holder1.pokemonNumero = (TextView)convertView.findViewById(R.id.PokemonNumero);
-            holder1.pokemonNombre = (TextView)convertView.findViewById(R.id.PokemonNombre);
-            holder1.tipoPrimario = (Button)convertView.findViewById(R.id.TipoPrimario);
-            holder1.tipoSecundario = (Button)convertView.findViewById(R.id.TipoSecundario);
-            holder1.pokemonNormal = (ImageView)convertView.findViewById(R.id.PokemonNormal);
-            holder1.pokemonShiny = (ImageView)convertView.findViewById(R.id.PokemonShiny);
-            holder1.alturaPulgadas = (TextView)convertView.findViewById(R.id.AlturaPulgadas);
-            holder1.alturaMetros = (TextView)convertView.findViewById(R.id.AlturaMetros);
-            holder1.pesoLibras = (TextView)convertView.findViewById(R.id.PesoLibras);
-            holder1.pesoKg = (TextView)convertView.findViewById(R.id.PesoKg);
-            holder1.especie = (TextView)convertView.findViewById(R.id.Especie);
-            holder1.macho = (TextView)convertView.findViewById(R.id.Macho);
-            holder1.hembra = (TextView)convertView.findViewById(R.id.Hembra);
-            holder1.habilidad1 = (TextView)convertView.findViewById(R.id.Habilidad1);
-            holder1.habilidad2 = (TextView)convertView.findViewById(R.id.Habilidad2);
-            holder1.habilidadOculta = (TextView)convertView.findViewById(R.id.HabilidadOculta);
-            holder1.huevo1 = (TextView)convertView.findViewById(R.id.Huevo1);
-            holder1.huevo2 = (TextView)convertView.findViewById(R.id.Huevo2);
-            holder1.captura = (TextView)convertView.findViewById(R.id.Captura);
-            holder1.esfuerzo1 = (TextView)convertView.findViewById(R.id.Esfuerzo1);
-            holder1.esfuerzo2 = (TextView)convertView.findViewById(R.id.Esfuerzo2);
-            holder1.esfuerzo3 = (TextView)convertView.findViewById(R.id.Esfuerzo3);
-            holder1.pasos = (TextView)convertView.findViewById(R.id.Pasos);
-            holder1.felicidad = (TextView)convertView.findViewById(R.id.Felicidad);
-            holder1.puntosExp = (TextView)convertView.findViewById(R.id.PuntosExp);
-            holder1.rapidezExp = (TextView)convertView.findViewById(R.id.RapidezExp);
+            holder1.pokemonNumero = (TextView)view.findViewById(R.id.PokemonNumero);
+            holder1.pokemonNombre = (TextView)view.findViewById(R.id.PokemonNombre);
+            holder1.tipoPrimario = (Button)view.findViewById(R.id.TipoPrimario);
+            holder1.tipoSecundario = (Button)view.findViewById(R.id.TipoSecundario);
+            holder1.pokemonNormal = (ImageView)view.findViewById(R.id.PokemonNormal);
+            holder1.pokemonShiny = (ImageView)view.findViewById(R.id.PokemonShiny);
+            holder1.alturaPulgadas = (TextView)view.findViewById(R.id.AlturaPulgadas);
+            holder1.alturaMetros = (TextView)view.findViewById(R.id.AlturaMetros);
+            holder1.pesoLibras = (TextView)view.findViewById(R.id.PesoLibras);
+            holder1.pesoKg = (TextView)view.findViewById(R.id.PesoKg);
+            holder1.especie = (TextView)view.findViewById(R.id.Especie);
+            holder1.macho = (TextView)view.findViewById(R.id.Macho);
+            holder1.hembra = (TextView)view.findViewById(R.id.Hembra);
+            holder1.habilidad1 = (TextView)view.findViewById(R.id.Habilidad1);
+            holder1.habilidad2 = (TextView)view.findViewById(R.id.Habilidad2);
+            holder1.habilidadOculta = (TextView)view.findViewById(R.id.HabilidadOculta);
+            holder1.huevo1 = (TextView)view.findViewById(R.id.Huevo1);
+            holder1.huevo2 = (TextView)view.findViewById(R.id.Huevo2);
+            holder1.captura = (TextView)view.findViewById(R.id.Captura);
+            holder1.esfuerzo1 = (TextView)view.findViewById(R.id.Esfuerzo1);
+            holder1.esfuerzo2 = (TextView)view.findViewById(R.id.Esfuerzo2);
+            holder1.esfuerzo3 = (TextView)view.findViewById(R.id.Esfuerzo3);
+            holder1.pasos = (TextView)view.findViewById(R.id.Pasos);
+            holder1.felicidad = (TextView)view.findViewById(R.id.Felicidad);
+            holder1.puntosExp = (TextView)view.findViewById(R.id.PuntosExp);
+            holder1.rapidezExp = (TextView)view.findViewById(R.id.RapidezExp);
 
-            convertView.setTag(holder1);
+            view.setTag(holder1);
         }
         else
         {
-            holder1 = (ViewHolder)convertView.getTag();
+            holder1 = (ViewHolder)view.getTag();
         }
 
         final Informacion datosInfo = listaInformacion1.get(position);
@@ -120,7 +120,7 @@ public class DatabaseAdapterInformation extends BaseAdapter {
         holder1.tipoSecundario.setEnabled(false);
         holder1.rapidezExp.setText("Medium Slow");
 
-        return convertView;
+        return view;
     }
 
     public static class ViewHolder{

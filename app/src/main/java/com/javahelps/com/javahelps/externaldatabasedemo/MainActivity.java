@@ -13,8 +13,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, AdapterView.OnItemClickListener {
 
-    SearchView Buscador;
-    ListView listview;
+    public SearchView Buscador;
+    public ListView listview;
     public ArrayList<Pokemon> pokelist1;
     DatabaseAdapter adaptador;
     DatabaseAccess databaseAccess;
