@@ -24,13 +24,13 @@
 
                 <ImageView
                     android:id="@+id/PokemonNormal"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
 
                 <ImageView
                     android:id="@+id/PokemonShiny"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp" />
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -43,10 +43,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
                     android:text="Bulbasaur"
                     android:textAlignment="center"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
             </LinearLayout>
 
             <LinearLayout
@@ -59,10 +58,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:textStyle="bold"
                     android:text="001"
                     android:textAlignment="center"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
             </LinearLayout>
 
             <LinearLayout
@@ -358,6 +356,15 @@
                         android:textStyle="normal" />
 
                     <TextView
+                        android:id="@+id/HabilidadOcultaMarcador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Hidden Ability"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
                         android:id="@+id/HabilidadOculta"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -607,8 +614,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="40dp"
-                        android:text="1,059,860 Exp."
+                        android:layout_marginRight="20dp"
+                        android:text="1,059,860 Points"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
 
@@ -617,7 +624,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="40dp"
+                        android:layout_marginRight="20dp"
                         android:text="Medium Slow"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -649,97 +656,116 @@
                 android:layout_height="match_parent">
 
                 <TableLayout
+                    android:id="@+id/DamageTable"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
                     <TableRow>
 
                         <Button
+                            android:id="@+id/Bug"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Bug" />
 
                         <Button
+                            android:id="@+id/Dark"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Dark" />
 
                         <Button
+                            android:id="@+id/Dragon"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Dragon" />
 
                         <Button
+                            android:id="@+id/Electric"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Electric" />
 
                         <Button
+                            android:id="@+id/Fairy"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fairy" />
 
                         <Button
+                            android:id="@+id/Fighting"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fighting" />
 
                         <Button
+                            android:id="@+id/Fire"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fire" />
 
                         <Button
+                            android:id="@+id/Flying"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Flying" />
 
                         <Button
+                            android:id="@+id/Ghost"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ghost" />
 
                         <Button
+                            android:id="@+id/Grass"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Grass" />
 
                         <Button
+                            android:id="@+id/Ground"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ground" />
 
                         <Button
+                            android:id="@+id/Ice"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ice" />
 
                         <Button
+                            android:id="@+id/Normal"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Normal" />
 
                         <Button
+                            android:id="@+id/Poison"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Poison" />
 
                         <Button
+                            android:id="@+id/Psychic"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Psychic" />
 
                         <Button
+                            android:id="@+id/Rock"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Rock" />
 
                         <Button
+                            android:id="@+id/Steel"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Steel" />
 
                         <Button
+                            android:id="@+id/Water"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Water" />
@@ -748,116 +774,151 @@
                     <TableRow>
 
                         <TextView
+                            android:id="@+id/BugDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/DarkDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/DragonDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/ElectricDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x0.5" />
 
                         <TextView
+                            android:id="@+id/FairyDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x0.5" />
 
                         <TextView
+                            android:id="@+id/FightingDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x0.5" />
 
                         <TextView
+                            android:id="@+id/FireDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x2" />
 
                         <TextView
+                            android:id="@+id/FlyingDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x2" />
 
                         <TextView
+                            android:id="@+id/GhostDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/GrassDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x0.25" />
 
                         <TextView
+                            android:id="@+id/GroundDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/IceDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x2" />
 
                         <TextView
+                            android:id="@+id/NormalDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/PoisonDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/PsychicDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x2" />
 
                         <TextView
+                            android:id="@+id/RockDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/SteelDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x1" />
 
                         <TextView
+                            android:id="@+id/WaterDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:text="x0.5" />
                     </TableRow>
                 </TableLayout>
             </HorizontalScrollView>
-
 
         </LinearLayout>
     </ScrollView>
