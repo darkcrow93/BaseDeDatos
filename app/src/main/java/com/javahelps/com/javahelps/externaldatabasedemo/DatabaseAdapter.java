@@ -57,7 +57,8 @@ public class DatabaseAdapter extends BaseAdapter {
         if(view == null)
         {
             LayoutInflater inf = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inf.inflate(layout.otra, null);
+            //view = inf.inflate(layout.otra, null);
+            view = inf.inflate(layout.activity_adaptador, null);
 
             holder = new ViewHolder();
 

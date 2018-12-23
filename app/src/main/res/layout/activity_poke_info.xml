@@ -17,9 +17,9 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -99,7 +99,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="38dp"
                         android:text="Height"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -115,6 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
                         android:text="2'0.4''"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -124,6 +125,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
                         android:text="0.7 m"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -143,7 +145,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="38dp"
                         android:text="Weight"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -159,6 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
                         android:text="15.2 lbs"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -168,6 +171,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
                         android:text="6.9 kg"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -187,7 +191,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="37dp"
                         android:text="Species"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -203,6 +207,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="28dp"
                         android:text="Seed Pokémon"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -222,7 +227,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="40dp"
                         android:text="Gender"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -243,6 +248,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:layout_marginLeft="60dp"
                             android:text="Male "
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#0000FF"
@@ -262,7 +268,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="48dp"
+                            android:layout_marginLeft="37dp"
                             android:text="88.1%"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#0000FF"
@@ -284,6 +290,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
+                                android:layout_marginLeft="50dp"
                                 android:text="Female "
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#FF0000"
@@ -326,7 +333,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="35dp"
                         android:text="Abilities"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -342,6 +349,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
                         android:text="Overgrow"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -351,6 +359,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
                         android:text="Nothing"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -360,6 +369,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
                         android:text="Hidden Ability"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -369,6 +379,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="27dp"
                         android:text="Chlorophyll (Hidden Ability)"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -388,7 +399,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="25dp"
                         android:text="Egg Groups"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -404,7 +415,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="20dp"
                         android:text="Monster"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -414,7 +425,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="20dp"
                         android:text="Grass"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -434,7 +445,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="25dp"
                         android:text="Capture rate"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -450,7 +461,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="15dp"
                         android:text="45"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -470,7 +481,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="25dp"
                         android:text="Effort Values"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -486,7 +497,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="15dp"
                         android:text="1 Sp. Attack Point"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -496,7 +507,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="15dp"
                         android:text="1 Sp. Defense Point"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -506,7 +517,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="15dp"
                         android:text="1 Sp. Attack Point"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -526,7 +537,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:text="Base Egg Steps"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="bold" />
@@ -542,7 +553,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="31dp"
+                        android:layout_marginLeft="4dp"
                         android:text="5120"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -562,10 +573,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="15dp"
                         android:text="Base Happiness"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textStyle="bold" />
+                        android:textStyle="bold" /> <!-- android:layout_marginLeft="5dp" -->
                 </LinearLayout>
 
                 <LinearLayout
@@ -578,7 +589,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="31dp"
+                        android:layout_marginLeft="5dp"
                         android:text="70"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -614,7 +625,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
                         android:text="1,059,860 Points"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -624,7 +634,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginRight="20dp"
                         android:text="Medium Slow"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textStyle="normal" />
@@ -666,105 +675,123 @@
                             android:id="@+id/Bug"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:textStyle="bold"
                             android:text="Bug" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Dark"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Dark" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Dragon"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Dragon" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Electric"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Electric" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Fairy"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fairy" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Fighting"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fighting" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Fire"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Fire" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Flying"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Flying" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Ghost"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ghost" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Grass"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Grass" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Ground"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ground" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Ice"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Ice" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Normal"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Normal" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Poison"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Poison" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Psychic"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Psychic" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Rock"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Rock" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Steel"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Steel" />
 
                         <Button
+                            android:textStyle="bold"
                             android:id="@+id/Water"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -778,147 +805,161 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/DarkDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/DragonDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/ElectricDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x0.5" />
+                            android:text="x0.5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/FairyDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x0.5" />
+                            android:text="x0.5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/FightingDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x0.5" />
+                            android:text="x0.5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/FireDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x2" />
+                            android:text="x2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/FlyingDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x2" />
+                            android:text="x2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/GhostDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/GrassDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x0.25" />
+                            android:text="x0.25"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/GroundDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/IceDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x2" />
+                            android:text="x2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/NormalDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/PoisonDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/PsychicDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x2" />
+                            android:text="x2"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/RockDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/SteelDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x1" />
+                            android:text="x1"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
                             android:id="@+id/WaterDamage"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                            android:text="x0.5" />
+                            android:text="x0.5"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                     </TableRow>
                 </TableLayout>
             </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="EVOLUTIONARY CHAIN"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

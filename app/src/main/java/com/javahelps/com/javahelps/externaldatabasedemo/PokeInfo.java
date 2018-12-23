@@ -2,7 +2,11 @@ package com.javahelps.com.javahelps.externaldatabasedemo;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.graphics.drawable.PaintDrawable;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -84,6 +88,7 @@ public class PokeInfo extends AppCompatActivity {
     Button WaterInfo;
 
     GradientDrawable colorDraw;
+    Drawable colorButton;
 
     //#a8b820, #705848, #7038f8, #f8d030, #ee99ac, #c03028, #f08030, #a890f0, #705898, #78c850, #e0c068, #98d8d8, #a8a878, #a040a0, #f85888, #b8a038, #b8b8d0, #6890f0
     double[] TotalDamage = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
@@ -187,7 +192,7 @@ public class PokeInfo extends AppCompatActivity {
         NumeroInfo.setText(datosInfo.getNumeroInfo());
         NombreInfo.setText(datosInfo.getNombreInfo());
         AlturaPulgadasInfo.setText(datosInfo.getAlturaPulgadas());
-        AlturaPulgadasInfo.setText(datosInfo.getAlturaMetros());
+        AlturaMetrosInfo.setText(datosInfo.getAlturaMetros());
         PesoLibrasInfo.setText(datosInfo.getPesoLbs());
         PesoKgInfo.setText(datosInfo.getPesoKg());
         EspecieInfo.setText(datosInfo.getEspecie());
@@ -234,8 +239,16 @@ public class PokeInfo extends AppCompatActivity {
         TipoPrimarioInfo.setBackgroundResource(R.drawable.types);
         colorDraw = (GradientDrawable)TipoPrimarioInfo.getBackground().getCurrent();
 
+        //if(TipoPrimarioInfo.getText().equals(tipos[0]))
+        //{
+        //    colorButton = TipoPrimarioInfo.getBackground();
+        //    colorButton = DrawableCompat.wrap(colorButton);
+        //    DrawableCompat.setTint(colorButton, Color.rgb(168, 184,32));
+        //}
         if(TipoPrimarioInfo.getText().equals(tipos[0]))          //BUG
         {
+
+            colorDraw.setStroke(2, Color.rgb(109,120,21));
             colorDraw.setColor(Color.rgb(168, 184,32));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 2, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -244,6 +257,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[1]))    //DARK
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,47));
             colorDraw.setColor(Color.rgb(112, 88,72));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 0.5, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 2, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 0.5,
@@ -252,6 +266,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[2]))    //DRAGON
         {
+            colorDraw.setStroke(2, Color.rgb(73,36,161));
             colorDraw.setColor(Color.rgb(112, 56,248));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 2, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 2, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -260,6 +275,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[3]))    //ELECTRIC
         {
+            colorDraw.setStroke(2, Color.rgb(161,135,31));
             colorDraw.setColor(Color.rgb(248, 208,48));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -268,6 +284,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[4]))    //FAIRY
         {
+            colorDraw.setStroke(2, Color.rgb(155,100,112));
             colorDraw.setColor(Color.rgb(238, 153,172));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 0.5, TotalDamage[2] * 0, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -276,6 +293,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[5]))    //FIGHTNING
         {
+            colorDraw.setStroke(2, Color.rgb(125,31,26));
             colorDraw.setColor(Color.rgb(192, 48,40));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 0.5, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 2, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -284,6 +302,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[6]))    //FIRE
         {
+            colorDraw.setStroke(2, Color.rgb(156,83,31));
             colorDraw.setColor(Color.rgb(240, 128,48));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -292,6 +311,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[7]))    //FLYING
         {
+            colorDraw.setStroke(2, Color.rgb(109,94,156));
             colorDraw.setColor(Color.rgb(168, 144,240));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 2,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -300,6 +320,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[8]))    //GHOST
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,99));
             colorDraw.setColor(Color.rgb(112, 88,152));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 2, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 2,
@@ -308,6 +329,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[9]))    //GRASS
         {
+            colorDraw.setStroke(2, Color.rgb(78,130,52));
             colorDraw.setColor(Color.rgb(120, 200,80));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 2, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -316,6 +338,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[10]))    //GROUND
         {
+            colorDraw.setStroke(2, Color.rgb(146,125,68));
             colorDraw.setColor(Color.rgb(224, 192,104));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -324,6 +347,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[11]))   //ICE
         {
+            colorDraw.setStroke(2, Color.rgb(99,141,141));
             colorDraw.setColor(Color.rgb(152, 216,216));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 2, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -332,6 +356,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[12]))    //NORMAL
         {
+            colorDraw.setStroke(2, Color.rgb(109,109,78));
             colorDraw.setColor(Color.rgb(168, 168,120));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 0,
@@ -340,6 +365,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[13]))    //POISON
         {
+            colorDraw.setStroke(2, Color.rgb(104,42,104));
             colorDraw.setColor(Color.rgb(160, 64,160));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -348,6 +374,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[14]))    //PSYCHIC
         {
+            colorDraw.setStroke(2, Color.rgb(161,57,89));
             colorDraw.setColor(Color.rgb(248, 88,136));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 2, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 2,
@@ -356,6 +383,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[15]))    //ROCK
         {
+            colorDraw.setStroke(2, Color.rgb(120,104,36));
             colorDraw.setColor(Color.rgb(184, 160,56));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 0.5, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -364,6 +392,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[16]))    //STEEL
         {
+            colorDraw.setStroke(2, Color.rgb(120,120,135));
             colorDraw.setColor(Color.rgb(184, 184,208));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -372,6 +401,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoPrimarioInfo.getText().equals(tipos[17]))    //WATER
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,99));
             colorDraw.setColor(Color.rgb(104, 144,240));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 2,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] *  1, TotalDamage[8] * 1,
@@ -389,6 +419,7 @@ public class PokeInfo extends AppCompatActivity {
 
         if(TipoSecundarioInfo.getText().equals(tipos[0]))          //BUG
         {
+            colorDraw.setStroke(2, Color.rgb(109,120,21));
             colorDraw.setColor(Color.rgb(168, 184,32));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 2, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -397,6 +428,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[1]))    //DARK
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,47));
             colorDraw.setColor(Color.rgb(112, 88,72));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 0.5, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 2, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 0.5,
@@ -405,6 +437,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[2]))    //DRAGON
         {
+            colorDraw.setStroke(2, Color.rgb(73,36,161));
             colorDraw.setColor(Color.rgb(112, 56,248));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 2, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 2, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -413,6 +446,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[3]))    //ELECTRIC
         {
+            colorDraw.setStroke(2, Color.rgb(161,135,31));
             colorDraw.setColor(Color.rgb(248, 208,48));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -421,6 +455,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[4]))    //FAIRY
         {
+            colorDraw.setStroke(2, Color.rgb(155,100,112));
             colorDraw.setColor(Color.rgb(238, 153,172));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 0.5, TotalDamage[2] * 0, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -429,6 +464,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[5]))    //FIGHTNING
         {
+            colorDraw.setStroke(2, Color.rgb(125,31,26));
             colorDraw.setColor(Color.rgb(192, 48,40));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 0.5, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 2, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -437,6 +473,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[6]))    //FIRE
         {
+            colorDraw.setStroke(2, Color.rgb(156,83,31));
             colorDraw.setColor(Color.rgb(240, 128,48));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -445,6 +482,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[7]))    //FLYING
         {
+            colorDraw.setStroke(2, Color.rgb(109,94,156));
             colorDraw.setColor(Color.rgb(168, 144,240));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 2,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -453,6 +491,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[8]))    //GHOST
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,99));
             colorDraw.setColor(Color.rgb(112, 88,152));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 2, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 2,
@@ -461,6 +500,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[9]))    //GRASS
         {
+            colorDraw.setStroke(2, Color.rgb(78,130,52));
             colorDraw.setColor(Color.rgb(120, 200,80));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0.5,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 2, TotalDamage[7] * 2, TotalDamage[8] * 1,
@@ -469,6 +509,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[10]))    //GROUND
         {
+            colorDraw.setStroke(2, Color.rgb(146,125,68));
             colorDraw.setColor(Color.rgb(224, 192,104));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 0,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -477,6 +518,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[11]))   //ICE
         {
+            colorDraw.setStroke(2, Color.rgb(99,141,141));
             colorDraw.setColor(Color.rgb(152, 216,216));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 2, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -485,6 +527,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[12]))    //NORMAL
         {
+            colorDraw.setStroke(2, Color.rgb(109,109,78));
             colorDraw.setColor(Color.rgb(168, 168,120));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 0,
@@ -493,6 +536,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[13]))    //POISON
         {
+            colorDraw.setStroke(2, Color.rgb(104,42,104));
             colorDraw.setColor(Color.rgb(160, 64,160));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 1,
@@ -501,6 +545,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[14]))    //PSYCHIC
         {
+            colorDraw.setStroke(2, Color.rgb(161,57,89));
             colorDraw.setColor(Color.rgb(248, 88,136));
             TotalDamage = new double[]{TotalDamage[0] * 2, TotalDamage[1] * 2, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 0.5, TotalDamage[6] * 1, TotalDamage[7] * 1, TotalDamage[8] * 2,
@@ -509,6 +554,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[15]))    //ROCK
         {
+            colorDraw.setStroke(2, Color.rgb(120,104,36));
             colorDraw.setColor(Color.rgb(184, 160,56));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 1, TotalDamage[5] * 2, TotalDamage[6] * 0.5, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -517,6 +563,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[16]))    //STEEL
         {
+            colorDraw.setStroke(2, Color.rgb(120,120,135));
             colorDraw.setColor(Color.rgb(184, 184,208));
             TotalDamage = new double[]{TotalDamage[0] * 0.5, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 1,
                     TotalDamage[4] * 0.5, TotalDamage[5] * 2, TotalDamage[6] * 1, TotalDamage[7] * 0.5, TotalDamage[8] * 1,
@@ -525,6 +572,7 @@ public class PokeInfo extends AppCompatActivity {
         }
         else if(TipoSecundarioInfo.getText().equals(tipos[17]))    //WATER
         {
+            colorDraw.setStroke(2, Color.rgb(73,57,99));
             colorDraw.setColor(Color.rgb(104, 144,240));
             TotalDamage = new double[]{TotalDamage[0] * 1, TotalDamage[1] * 1, TotalDamage[2] * 1, TotalDamage[3] * 2,
                     TotalDamage[4] * 1, TotalDamage[5] * 1, TotalDamage[6] * 0.5, TotalDamage[7] *  1, TotalDamage[8] * 1,
@@ -603,95 +651,114 @@ public class PokeInfo extends AppCompatActivity {
 
     public void Tabla()
     {
+        BugInfo.setEnabled(false);
         BugInfo.setTextColor(Color.rgb(255,255,255));
-        BugInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)BugInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(168, 184,32));
+        colorButton = BugInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(168, 184,32));
 
+
+        DarkInfo.setEnabled(false);
         DarkInfo.setTextColor(Color.rgb(255,255,255));
-        DarkInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)DarkInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(112, 88,72));
+        colorButton = DarkInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(112, 88,72));
 
+        DragonInfo.setEnabled(false);
         DragonInfo.setTextColor(Color.rgb(255,255,255));
-        DragonInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)DragonInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(112, 56,248));
+        colorButton = DragonInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(112, 56,248));
 
+        ElectricInfo.setEnabled(false);
         ElectricInfo.setTextColor(Color.rgb(255,255,255));
-        ElectricInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)ElectricInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(248, 208,48));
+        colorButton = ElectricInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(248, 208,48));
 
+        FairyInfo.setEnabled(false);
         FairyInfo.setTextColor(Color.rgb(255,255,255));
-        FairyInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)FairyInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(238, 153,172));
+        colorButton = FairyInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(238, 153,172));
 
+        FightingInfo.setEnabled(false);
         FightingInfo.setTextColor(Color.rgb(255,255,255));
-        FightingInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)FightingInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(192, 48,40));
+        colorButton = FightingInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(192, 48,40));
 
+        FireInfo.setEnabled(false);
         FireInfo.setTextColor(Color.rgb(255,255,255));
-        FireInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)FireInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(240, 128,48));
+        colorButton = FireInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(240, 128,48));
 
+        FlyingInfo.setEnabled(false);
         FlyingInfo.setTextColor(Color.rgb(255,255,255));
-        FlyingInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)FlyingInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(168, 144,240));
+        colorButton = FlyingInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(168, 144,240));
 
+        GhostInfo.setEnabled(false);
         GhostInfo.setTextColor(Color.rgb(255,255,255));
-        GhostInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)GhostInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(112, 88,152));
+        colorButton = GhostInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(112, 88,152));
 
+        GrassInfo.setEnabled(false);
         GrassInfo.setTextColor(Color.rgb(255,255,255));
-        GrassInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)GrassInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(120, 200,80));
+        colorButton = GrassInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(120, 200,80));
 
+        GroundInfo.setEnabled(false);
         GroundInfo.setTextColor(Color.rgb(255,255,255));
-        GroundInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)GroundInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(224, 192,104));
+        colorButton = GroundInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(224, 192,104));
 
+        IceInfo.setEnabled(false);
         IceInfo.setTextColor(Color.rgb(255,255,255));
-        IceInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)IceInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(152, 216,216));
+        colorButton = IceInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(152, 216,216));
 
+        NormalInfo.setEnabled(false);
         NormalInfo.setTextColor(Color.rgb(255,255,255));
-        NormalInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)NormalInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(168, 168,120));
+        colorButton = NormalInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(168, 168,120));
 
+        PoisonInfo.setEnabled(false);
         PoisonInfo.setTextColor(Color.rgb(255,255,255));
-        PoisonInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)PoisonInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(160, 64,160));
+        colorButton = PoisonInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(160, 64,160));
 
+        PsychicInfo.setEnabled(false);
         PsychicInfo.setTextColor(Color.rgb(255,255,255));
-        PsychicInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)PsychicInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(248, 88,136));
+        colorButton = PsychicInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(248, 88,136));
 
+        RockInfo.setEnabled(false);
         RockInfo.setTextColor(Color.rgb(255,255,255));
-        RockInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)RockInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(184, 160,56));
+        colorButton = RockInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(184, 160,56));
 
+        SteelInfo.setEnabled(false);
         SteelInfo.setTextColor(Color.rgb(255,255,255));
-        SteelInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)SteelInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(184, 184,208));
+        colorButton = SteelInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(184, 184,208));
 
+        WaterInfo.setEnabled(false);
         WaterInfo.setTextColor(Color.rgb(255,255,255));
-        WaterInfo.setBackgroundResource(R.drawable.types);
-        colorDraw = (GradientDrawable)WaterInfo.getBackground().getCurrent();
-        colorDraw.setColor(Color.rgb(104, 144,240));
+        colorButton = WaterInfo.getBackground();
+        colorButton = DrawableCompat.wrap(colorButton);
+        DrawableCompat.setTint(colorButton, Color.rgb(104, 144,240));
 
         BugDamageInfo.setText("x" + Double.toString(TotalDamage[0]));
         DarkDamageInfo.setText("x" + Double.toString(TotalDamage[1]));
