@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Crear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Objetos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="left"
+                android:id="@+id/Image_Pkmn1"
+                android:src="@drawable/b001"
+                android:layout_width="@dimen/Image_width"
+                android:layout_height="@dimen/Image_height" />
+
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/NombrePkmn1"
+                android:text="Crabominable"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/Text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/NumeroPkmn1"
+                android:text="#001"
+                android:textSize="@dimen/Text_number"
+                android:textColor="#ff868686"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:background="@drawable/types"
+                android:id="@+id/Tipo1PPkmn"
+                android:textStyle="bold"
+                android:text="Electric"
+                android:textSize="@dimen/Text_button1"
+                android:layout_width="@dimen/Button1_width"
+                android:layout_height="@dimen/Button1_height" />
+
+            <Button
+                android:background="@drawable/types"
+                android:id="@+id/Tipo2PPkmn"
+                android:textStyle="bold"
+                android:textSize="@dimen/Text_button2"
+                android:text="Electric"
+                android:layout_width="@dimen/Button2_width"
+                android:layout_height="@dimen/Button2_height"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

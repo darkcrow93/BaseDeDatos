@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Image_width">130dp</dimen>
+    <dimen name="Image_height">130dp</dimen>
+
+    <dimen name="Button1_width">152dp</dimen>
+    <dimen name="Button1_height">72dp</dimen>
+
+    <dimen name="Button2_width">152dp</dimen>
+    <dimen name="Button2_height">72dp</dimen>
+
+    <dimen name="Text_button1">28sp</dimen>
+    <dimen name="Text_button2">28sp</dimen>
+
+    <dimen name="Text_name">44sp</dimen>
+    <dimen name="Text_number">44sp</dimen>
+
+</resources>
