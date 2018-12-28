@@ -15,4 +15,69 @@
     <dimen name="Text_name">22sp</dimen>
     <dimen name="Text_number">22sp</dimen>
 
+    <dimen name="ImageInfo_width">140dp</dimen>
+    <dimen name="ImageInfo_height">140dp</dimen>
+
+    <dimen name="TextInfo_name">22sp</dimen>
+    <dimen name="TextInfo_number">22sp</dimen>
+
+    <dimen name="Button1Info_width">76dp</dimen>
+    <dimen name="Button1Info_height">36dp</dimen>
+
+    <dimen name="Button2Info_width">76dp</dimen>
+    <dimen name="Button2Info_height">36dp</dimen>
+
+    <dimen name="Text_button1Info">14sp</dimen>
+    <dimen name="Text_button2Info">14sp</dimen>
+
+    <dimen name="TextInfo_Height">18sp</dimen>
+    <dimen name="TextInfoHeight_margen1">38dp</dimen>
+    <dimen name="TextInfoHeight_margen2">30dp</dimen>
+
+    <dimen name="TextInfo_Weight">18sp</dimen>
+    <dimen name="TextInfoWeight_margen1">38dp</dimen>
+    <dimen name="TextInfoWeight_margen2">30dp</dimen>
+
+    <dimen name="TextInfo_Species">18sp</dimen>
+    <dimen name="TextInfoSpecies_margen1">37dp</dimen>
+    <dimen name="TextInfoSpecies_margen2">28dp</dimen>
+
+    <dimen name="TextInfo_Gender">18sp</dimen>
+    <dimen name="TextInfoGender_margen1">40dp</dimen>
+    <dimen name="TextInfoGender_margen2">60dp</dimen>
+    <dimen name="TextInfoGender_margen3">37dp</dimen>
+    <dimen name="TextInfoGender_margen4">50dp</dimen>
+    <dimen name="TextInfoGender_margen5">30dp</dimen>
+
+    <dimen name="TextInfo_Abilities">18sp</dimen>
+    <dimen name="TextInfoAbilities_margen1">35dp</dimen>
+    <dimen name="TextInfoAbilities_margen2">27dp</dimen>
+
+    <dimen name="TextInfo_Eggs">18sp</dimen>
+    <dimen name="TextInfoEggs_margen1">25dp</dimen>
+    <dimen name="TextInfoEggs_margen2">20dp</dimen>
+
+    <dimen name="TextInfo_Capture">18sp</dimen>
+    <dimen name="TextInfoCapture_margen1">25dp</dimen>
+    <dimen name="TextInfoCapture_margen2">15dp</dimen>
+
+    <dimen name="TextInfo_Evs">18sp</dimen>
+    <dimen name="TextInfoEvs_margen1">25dp</dimen>
+    <dimen name="TextInfoEvs_margen2">15dp</dimen>
+
+    <dimen name="TextInfo_Steps">18sp</dimen>
+    <dimen name="TextInfoSteps_margen1">15dp</dimen>
+    <dimen name="TextInfoSteps_margen2">4dp</dimen>
+
+    <dimen name="TextInfo_Happiness">18sp</dimen>
+    <dimen name="TextInfoHappiness_margen1">15dp</dimen>
+    <dimen name="TextInfoHappiness_margen2">5dp</dimen>
+
+    <dimen name="TextInfo_Exp">18sp</dimen>
+    <dimen name="TextInfoExp_margen1">5dp</dimen>
+
+    <dimen name="TextInfo_Damage">18sp</dimen>
+
+    <dimen name="TextInfo_Chain">18sp</dimen>
+
 </resources>

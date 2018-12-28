@@ -24,13 +24,13 @@
 
                 <ImageView
                     android:id="@+id/PokemonNormal"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp" />
+                    android:layout_width="@dimen/ImageInfo_width"
+                    android:layout_height="@dimen/ImageInfo_height" />
 
                 <ImageView
                     android:id="@+id/PokemonShiny"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp" />
+                    android:layout_width="@dimen/ImageInfo_width"
+                    android:layout_height="@dimen/ImageInfo_height" />
             </LinearLayout>
 
             <LinearLayout
@@ -45,7 +45,7 @@
                     android:layout_gravity="center"
                     android:text="Bulbasaur"
                     android:textAlignment="center"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                    android:textSize="@dimen/TextInfo_name" />
             </LinearLayout>
 
             <LinearLayout
@@ -60,7 +60,7 @@
                     android:layout_gravity="center"
                     android:text="001"
                     android:textAlignment="center"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+                    android:textSize="@dimen/TextInfo_number" />
             </LinearLayout>
 
             <LinearLayout
@@ -71,16 +71,20 @@
 
                 <Button
                     android:id="@+id/TipoPrimario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/Button1Info_width"
+                    android:layout_height="@dimen/Button1Info_height"
+                    android:background="@drawable/types"
+                    android:textSize="@dimen/Text_button1Info"
                     android:layout_gravity="center"
                     android:text="Electric"
                     android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/TipoSecundario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/Button2Info_width"
+                    android:layout_height="@dimen/Button2Info_height"
+                    android:background="@drawable/types"
+                    android:textSize="@dimen/Text_button2Info"
                     android:layout_gravity="center"
                     android:text="Electric"
                     android:textStyle="bold" />
@@ -99,9 +103,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="38dp"
+                        android:layout_marginLeft="@dimen/TextInfoHeight_margen1"
                         android:text="Height"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Height"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -115,9 +119,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/TextInfoHeight_margen2"
                         android:text="2'0.4''"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Height"
                         android:textStyle="normal" />
 
                     <TextView
@@ -125,9 +129,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/TextInfoHeight_margen2"
                         android:text="0.7 m"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Height"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -145,9 +149,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="38dp"
+                        android:layout_marginLeft="@dimen/TextInfoWeight_margen1"
                         android:text="Weight"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Weight"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -161,9 +165,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/TextInfoWeight_margen2"
                         android:text="15.2 lbs"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Weight"
                         android:textStyle="normal" />
 
                     <TextView
@@ -171,9 +175,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="@dimen/TextInfoWeight_margen2"
                         android:text="6.9 kg"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Weight"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -191,9 +195,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="37dp"
+                        android:layout_marginLeft="@dimen/TextInfoSpecies_margen1"
                         android:text="Species"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Species"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -207,9 +211,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="28dp"
+                        android:layout_marginLeft="@dimen/TextInfoSpecies_margen2"
                         android:text="Seed Pokémon"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Species"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -227,9 +231,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="40dp"
+                        android:layout_marginLeft="@dimen/TextInfoGender_margen1"
                         android:text="Gender"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Gender"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -248,9 +252,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="60dp"
+                            android:layout_marginLeft="@dimen/TextInfoGender_margen2"
                             android:text="Male "
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textSize="@dimen/TextInfo_Gender"
                             android:textColor="#0000FF"
                             android:textStyle="normal" />
 
@@ -259,7 +263,7 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:text="♂"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textSize="@dimen/TextInfo_Gender"
                             android:textColor="#0000FF"
                             android:textStyle="normal" />
 
@@ -268,9 +272,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_marginLeft="37dp"
+                            android:layout_marginLeft="@dimen/TextInfoGender_margen3"
                             android:text="88.1%"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textSize="@dimen/TextInfo_Gender"
                             android:textColor="#0000FF"
                             android:textStyle="normal" />
                     </LinearLayout>
@@ -290,9 +294,9 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
-                                android:layout_marginLeft="50dp"
+                                android:layout_marginLeft="@dimen/TextInfoGender_margen4"
                                 android:text="Female "
-                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textSize="@dimen/TextInfo_Gender"
                                 android:textColor="#FF0000"
                                 android:textStyle="normal" />
 
@@ -301,7 +305,7 @@
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
                                 android:text="♀"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textSize="@dimen/TextInfo_Gender"
                                 android:textColor="#FF0000"
                                 android:textStyle="normal" />
 
@@ -310,9 +314,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_gravity="center"
-                                android:layout_marginLeft="30dp"
+                                android:layout_marginLeft="@dimen/TextInfoGender_margen5"
                                 android:text="11.9%"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textSize="@dimen/TextInfo_Gender"
                                 android:textColor="#FF0000"
                                 android:textStyle="normal" />
                         </LinearLayout>
@@ -333,9 +337,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="35dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen1"
                         android:text="Abilities"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Abilities"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -349,9 +353,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen2"
                         android:text="Overgrow"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Abilities"
                         android:textStyle="normal" />
 
                     <TextView
@@ -359,9 +363,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen2"
                         android:text="Nothing"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Abilities"
                         android:textStyle="normal" />
 
                     <TextView
@@ -369,9 +373,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen2"
                         android:text="Hidden Ability"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Abilities"
                         android:textStyle="bold" />
 
                     <TextView
@@ -379,9 +383,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="27dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen2"
                         android:text="Chlorophyll (Hidden Ability)"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Abilities"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -399,9 +403,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen1"
                         android:text="Egg Groups"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Eggs"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -415,9 +419,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/TextInfoEggs_margen2"
                         android:text="Monster"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Eggs"
                         android:textStyle="normal" />
 
                     <TextView
@@ -425,9 +429,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="@dimen/TextInfoAbilities_margen2"
                         android:text="Grass"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Eggs"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -445,9 +449,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="@dimen/TextInfoCapture_margen1"
                         android:text="Capture rate"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Capture"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -461,9 +465,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoCapture_margen2"
                         android:text="45"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Capture"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -481,9 +485,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="@dimen/TextInfoEvs_margen1"
                         android:text="Effort Values"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Evs"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -497,9 +501,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoEvs_margen2"
                         android:text="1 Sp. Attack Point"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Evs"
                         android:textStyle="normal" />
 
                     <TextView
@@ -507,9 +511,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoEvs_margen2"
                         android:text="1 Sp. Defense Point"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Evs"
                         android:textStyle="normal" />
 
                     <TextView
@@ -517,9 +521,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoEvs_margen2"
                         android:text="1 Sp. Attack Point"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Evs"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -537,9 +541,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoSteps_margen1"
                         android:text="Base Egg Steps"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Steps"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -553,9 +557,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="4dp"
+                        android:layout_marginLeft="@dimen/TextInfoSteps_margen2"
                         android:text="5120"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Steps"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -573,9 +577,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="@dimen/TextInfoHappiness_margen1"
                         android:text="Base Happiness"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Happiness"
                         android:textStyle="bold" /> <!-- android:layout_marginLeft="5dp" -->
                 </LinearLayout>
 
@@ -589,9 +593,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="@dimen/TextInfoHappiness_margen2"
                         android:text="70"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Happiness"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -609,9 +613,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="@dimen/TextInfoExp_margen1"
                         android:text="Experiencie Growth"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Exp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -626,7 +630,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="1,059,860 Points"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Exp"
                         android:textStyle="normal" />
 
                     <TextView
@@ -635,7 +639,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="Medium Slow"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Exp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </LinearLayout>
@@ -660,7 +664,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="DAMAGE TAKEN"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="@dimen/TextInfo_Damage"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -962,7 +966,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="EVOLUTIONARY CHAIN"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/TextInfo_Chain"
                     android:textStyle="bold" />
             </LinearLayout>
 
